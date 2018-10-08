@@ -1,0 +1,58 @@
+.wrapper {
+  width: 94vw;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  margin: 5vw 3vw 0;
+  .header {
+    border-bottom: 1px solid #ccc;
+    background: #F0F0F0;
+    color: rgba(114, 114, 130, 1);
+    padding: 10px 0;
+  }
+
+  > div {
+    display: flex;
+    padding: 8px 0;
+  }
+
+  > div > span {
+    padding: 0 3vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  > div span:nth-child(1) {
+    width: 17vw;
+  }
+
+  > div span:nth-child(2) {
+    width: 20vw;
+  }
+
+  > div span:nth-child(3) {
+    width: 32vw;
+  }
+
+  > div span:nth-child(4) {
+    width: 28vw;
+  }
+
+  .item {
+    border-bottom: 1px solid #ccc;
+
+  }
+
+  .lastItem {
+    border-bottom: none;
+  }
+
+}
+
+.pageWrapper {
+  border: none;
+  margin: 5vw 3vw 0;
+  :global(.am-pagination-wrap-btn-next) {
+    text-align: right;
+  }
+}

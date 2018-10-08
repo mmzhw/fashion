@@ -1,0 +1,41 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "roadhog server",
+    "build": "cross-env MY_NODE_ENV=production roadhog build",
+    "build:test": "cross-env MY_NODE_ENV=test roadhog build",
+    "build:dev": "cross-env MY_NODE_ENV=development roadhog build",
+    "build:debug": "cross-env COMPRESS=none roadhog build",
+    "lint": "eslint --ext .js src test",
+    "server:dev": "supervisor ./server/bin/www"
+  },
+  "dependencies": {
+    "antd-mobile": "^2.2.5",
+    "axios": "^0.18.0",
+    "babel-plugin-import": "^1.6.7",
+    "babel-polyfill": "^6.23.0",
+    "classnames": "^2.2.5",
+    "dva": "2.2.3",
+    "history": "^4.7.2",
+    "moment": "^2.22.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-lazyload": "^2.3.0",
+    "react-slick": "^0.22.3",
+    "react-sticky": "^6.0.3",
+    "video.js": "^7.2.3"
+  },
+  "devDependencies": {
+    "babel-plugin-dva-hmr": "^0.3.2",
+    "eslint": "^4.14.0",
+    "eslint-config-umi": "^0.1.1",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-html": "^4.0.5",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "husky": "^0.12.0",
+    "redbox-react": "^1.4.3",
+    "roadhog": "2.4.2"
+  }
+}

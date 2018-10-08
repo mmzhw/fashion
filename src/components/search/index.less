@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+}
+
+.search {
+  background: #FAFAFA;
+  padding: 0;
+  :global(.am-search-input) {
+    background: #FAFAFA;
+    :global(.am-search-synthetic-ph) {
+      text-align: left;
+    }
+  }
+}
+
+:global(.am-search.am-search-start).search :global(.am-search-input) :global(.am-search-synthetic-ph) {
+  padding-left: 0;
+}
+
+:global(.am-search.am-search-start).search :global(.am-search-input) input[type="search"] {
+  padding: 0 28px 0 20px;
+}
