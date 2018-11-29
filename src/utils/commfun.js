@@ -43,7 +43,7 @@ export const handleVideo = (url) => {
 
 export const getWXUrl = () => {
     let activityId = window.location.pathname.replace('/activity/', '');
-    return 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx9bd96b4b7a025431&redirect_uri=' + VISIT_URL + activityId + '&response_type=code&scope=snsapi_userinfo#wechat_redirect';
+    return 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx66b81ff4b0eedeb6&redirect_uri=' + VISIT_URL + activityId + '&response_type=code&scope=snsapi_userinfo#wechat_redirect';
 };
 
 export const beyondObject = (a, b) => {
